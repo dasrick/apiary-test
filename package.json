@@ -1,0 +1,20 @@
+{
+  "name": "apiary-test",
+  "version": "0.0.1",
+  "description": "a repo for testing of apiary and tools around ...",
+  "private": false,
+  "author": "Enrico Hoffmann <dasrick@gmail.com>",
+  "license": "propertieray",
+  "engines": {
+    "node": "0.10.*",
+    "npm": "2.2.*"
+  },
+  "dependencies": {
+    "api-mock": "~0.2.2",
+    "drakov": "~0.1.0"
+  },
+  "scripts": {
+    "api-mock": "api-mock ./apiary.apib -p 3000",
+    "drakov": "drakov -f ./apiary.apib -p 3000"
+  }
+}
