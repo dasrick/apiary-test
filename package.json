@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "api-mock": "~0.2.2",
-    "drakov": "~0.1.0"
+    "drakov": "~0.1.0",
+    "dredd": "~0.5.0"
   },
   "scripts": {
     "api-mock": "api-mock ./apiary.apib -p 3000",
-    "drakov": "drakov -f ./apiary.apib -p 3000"
+    "drakov": "drakov -f ./apiary.apib -p 3000",
+    "dredd": "dredd apiary.apib http://localhost:3000"
   }
 }
